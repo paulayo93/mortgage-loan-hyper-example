@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mortgage Calculator with Hyperformula</title>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/milligram@1.4.1/dist/milligram.min.css"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div
+      style="
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-bottom: 40px;
+      "
+    >
+      <h1>Mortgage Loan Calculator</h1>
+    </div>
+    <div class="example">
+      <button id="run" class="button run">
+        Run calculations
+      </button>
+      <button id="reset" class="button button-outline reset">
+        Reset
+      </button>
+
+      <div id="preview">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <th>Owner</th>
+              <th>House Price ($)</th>
+              <th>Down Payment ($)</th>
+              <th>Loan Amount ($)</th>
+              <th>Loan Term (Yrs)</th>
+              <th>Interest Rate (%)</th>
+              <th>Monthly Payment ($)</th>
+              <th>Total Paid ($)</th>
+              <th>Cost of Finance ($)</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
